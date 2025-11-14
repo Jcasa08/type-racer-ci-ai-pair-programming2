@@ -58,8 +58,37 @@ p,
     font-family: var(--primary-font);
 }
 
-
-.btn-custom{
-    border : 2px solid var(--primary-color);
+.btn-custom {
+    border: 2px solid var(--primary-color);
     background-color: white;
+}
+
+/* Word-level feedback for typing sample */
+#sample-text .word {
+    display: inline-block;
+    padding: 0.08rem 0.25rem;
+    margin: 0 0.125rem;
+    border-radius: 4px;
+    transition: background-color 120ms ease, color 120ms ease,
+        outline 120ms ease;
+}
+
+#sample-text .word.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#sample-text .word.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+#sample-text .word.partial {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#sample-text .word.current {
+    outline: 2px solid rgba(0, 0, 0, 0.08);
+    text-decoration: underline;
 }
