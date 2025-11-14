@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Macondo&family=Manrope:wght@200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Sora:wght@100..800&display=swap");
+
+/*Global styles*/
+:root {
+    --primary-color: #ff8400;
+    --primary-font: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto,
+        Arial, sans-serif;
+    --secondary-font: "Alegreya", Georgia, "Times New Roman", serif;
+}
+
+/* Header styles for centered title + instructions button */
+.site-header {
+    padding: 1.25rem 0;
+    background: var(--primary-color);
+    color: #fff;
+}
+.site-header .header-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.site-title {
+    margin: 0;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: lowercase;
+}
+.site-title {
+    color: #fff;
+}
+/* Ensure title is readable on primary background */
+#instructionsBtn {
+    padding: 0.5rem 0.8rem;
+}
+
+@media (max-width: 480px) {
+    .site-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Typography: headings use secondary font, paragraphs use primary font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--secondary-font);
+}
+
+p,
+.lead {
+    font-family: var(--primary-font);
+}
+
+
+.btn-custom{
+    border : 2px solid var(--primary-color);
+    background-color: white;
+}
